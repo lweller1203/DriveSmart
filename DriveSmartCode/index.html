@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/363416430c.js" crossorigin="anonymous"></script>
 
       <!--Local CSS-->
-      <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -50,7 +50,7 @@
     <!--Form to receive the information-->
     <div class="col-10">
         <div class="row">
-            <div id=inputForm class="col-3">
+            <div id=inputForm class="col-3 offset-1">
                 <form>
 
                     <!--Input Name for Greeting-->
@@ -77,7 +77,7 @@
                     </div>
 
                     <!--Input for the Direction From-->
-                    <div class="form-group row">
+                    <div class="form-group row" style="text-align: center;">
                         <button type="button" class="btn btn-lg btn btn-success" disabled><i
                                 class="fas fa-route"></i>From</button>
                         <label class="col-sm-4 col-form-label"></label>
@@ -91,11 +91,11 @@
                     <div class="form-group row route-btn">
                         <input type="button" value="Get Route" onclick="GetRoute()" />
                         <input type="button" value="Click to set up a text reminder" id="textRemSetup"
-                            style="opacity: 0;" />
+                            style="opacity: 0; display: none;" />
                     </div>
 
                     <!--Input for the Arrival Time-->
-                    <div class="form-group row" id="textPrompt" style="opacity: 0;">
+                    <div class="form-group row" id="textPrompt" style="opacity: 0; display: none;" >
                         Wanted arrival time:
                         <br>
                         <form>
@@ -116,11 +116,11 @@
                         <td>
                             <div id="dvDistance">
                             </div>
-                            <div id="dvMap" style="width: 500px; height: 500px">
+                            <div id="dvMap" style="width: 500px; height: 500px;">
                             </div>
                         </td>
                         <td>
-                            <div id="dvPanel" style="width: 500px; height: 500px">
+                            <div id="dvPanel" style="width: 500px; height: 500px; margin-top: 47px;">
                             </div>
                         </td>
                     </tr>
@@ -154,7 +154,7 @@
     <!--End-->
     </br>
     <!-- Footer -->
-<footer class="page-footer font-small blue">
+<footer class="page-footer font-small blue" id="pageFooter">
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
@@ -257,6 +257,8 @@
             });
 
             $("#textRemSetup").css("opacity", "1")
+            $("#textRemSetup").css("display", "inline")
+            $("#dvPanel").css("background-color", "white")
 
 
         }
@@ -267,6 +269,8 @@
         $("#textRemSetup").click(function () {
             $("#textPrompt").css("opacity", "1");
             $("#button1DIV").css("opacity", "1");
+            $("#textPrompt").css("display", "inline");
+            $("#button1DIV").css("display", "inline");
             
             
         })
