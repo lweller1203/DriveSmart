@@ -45,6 +45,7 @@ function buttonAction1(res, tTime, rTime, uName, dTime){
 
 //setting up localhost
 app.use('/', router);
+app.use(express.static(__dirname + '/public'));
 app.listen(process.env.port || 3000);
 //port that localhost is running on
 console.log('Running at Port 3000');
