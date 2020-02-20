@@ -1,0 +1,66 @@
+/*Kryshtene's style starts here*/
+.navbar
+{
+    background-color: black;
+    color: white;
+}
+.navbar a { color: antiquewhite !important; }
+.navbar a:hover { color: antiquewhite !important; }
+
+
+body 
+{
+   background-image: url(../assets/images/skyline.jpg) !important;
+   background-size:     cover;                      
+   background-repeat:   no-repeat;
+   background-position: center center;              /* optional, center the image */
+   
+}
+#inputForm {
+    border-radius: 30px;
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+}
+{
+    padding-top: 40px;
+    text-align: center;
+    align-content: center;
+    border-width: 60px;
+    border-color: black;
+    padding: 30px;
+    height: 450px;
+}
+.page-footer
+{
+    color: lightslategray;
+    text-align: center; 
+}
+
+.btn-danger
+{
+    margin-bottom: 30px !important;
+    margin-left: 50px !important;
+    opacity: 1 !important;
+}
+
+.btn-success
+{
+    margin-bottom: 30px !important;
+    margin-left: 50px !important;
+    opacity: 1 !important;
+}
+
+.route-btn
+{
+    margin-right: 30px;
+}
+
+#dvPanel
+{
+    overflow: auto !important;
+    
+}
+
+.form-check { display: inline-block; }
+.form-check-label { min-width: 60px; text-align: left; }

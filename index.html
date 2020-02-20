@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Font awesome V5-->
+    <script src="https://kit.fontawesome.com/363416430c.js" crossorigin="anonymous"></script>
+
+      <!--Local CSS-->
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    
+    <title>Travel Smart</title>
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-globe-americas">
+                Travel Smart
+            </i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                Commute Made Easier!
+            </span>
+        </div>
+    </nav>
+
+    <!--Form to receive the information-->
+    <div class="col-10">
+        <div class="row">
+            <div id=inputForm class="col-3 offset-1">
+                <form>
+
+                    <!--Input Name for Greeting-->
+                    <div class="form-group row">
+                        <button type="button" class="btn btn-lg button-light"><strong>Name</strong></button>
+                        <label class="col-sm-4 col-form-label"></label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="userName" placeholder="Enter Name">
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <!--Input for the Direction To-->
+                    <div class="form-group row">
+                        <button type="button" class="btn btn-lg btn btn-danger" disabled><i
+                                class="fas fa-route"></i>To</button>
+                        <label class="col-sm-4 col-form-label"></label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="txtDestination"
+                                placeholder="Enter Destination">
+                        </div>
+                    </div>
+
+                    <!--Input for the Direction From-->
+                    <div class="form-group row" style="text-align: center;">
+                        <button type="button" class="btn btn-lg btn btn-success" disabled><i
+                                class="fas fa-route"></i>From</button>
+                        <label class="col-sm-4 col-form-label"></label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="txtSource" placeholder="Current Location">
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="form-group row route-btn">
+                        <input type="button" value="Get Route" onclick="GetRoute()" />
+                        <input type="button" value="Click to set up a text reminder" id="textRemSetup"
+                            style="opacity: 0; display: none;" />
+                    </div>
+
+                    <!--Input for the Arrival Time-->
+                    <div class="form-group row" id="textPrompt" style="opacity: 0; display: none;" >
+                        Wanted arrival time:
+                        <br>
+                        <form>
+                            <input type="text" class="timepicker" name="time" />
+                        </form>
+                        <div id="button1DIV" style="opacity: 0;">
+                            <input type="button" value="Set text reminder" id="button1">
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="col-lg-5">
+                <table>
+                    <tr>
+
+                        <td>
+                            <div id="dvDistance">
+                            </div>
+                            <div id="dvMap" style="width: 500px; height: 500px;">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="dvPanel" style="width: 500px; height: 500px; margin-top: 47px;">
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+
+        <!---Direction data and map-->
+
+
+    </div>
+
+
+
+
+    <!--Liam code starts here-->
+
+
+    <!--Liam code ends here-->
+
+    <!--Kryshtene code starts here-->
+
+    <!--Kryshtene code ends here-->
+
+    <!--Gianni code starts here-->
+
+    <!--Gianni code ends here-->
+
+    <!--End-->
+    </br>
+    <!-- Footer -->
+<footer class="page-footer font-small blue" id="pageFooter">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        Liam Weller
+        <br>
+        Kryshtene Tesfaye
+        <br>
+        Oscar Nuñez
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!--local Javascript-->
+
+    <script type="text/javascript"
+        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBZpPOvEO-_AuX8vf2XKpcgNmTFeXs0O8s&libraries=places&callback=initMap"></script>
+    <script type="text/javascript">
+        
+        
+
+        var travelTime = 0;
+        var rawTime = 0;
+        var source, destination;
+        var directionsDisplay;
+        var directionsService = new google.maps.DirectionsService();
+        google.maps.event.addDomListener(window, 'load', function () {
+            new google.maps.places.SearchBox(document.getElementById('txtSource'));
+            new google.maps.places.SearchBox(document.getElementById('txtDestination'));
+            directionsDisplay = new google.maps.DirectionsRenderer({ 'draggable': true });
+        });
+        function GetRoute() {
+            var miami = new google.maps.LatLng(25.761681, -80.191788);
+            var mapOptions = {
+                zoom: 7,
+                center: miami
+            };
+            map = new google.maps.Map(document.getElementById('dvMap'), mapOptions);
+            directionsDisplay.setMap(map);
+            directionsDisplay.setPanel(document.getElementById('dvPanel'));
+            //*********DIRECTIONS AND ROUTE**********************//
+            source = document.getElementById("txtSource").value;
+            destination = document.getElementById("txtDestination").value;
+
+            const request = {
+                origin: source,
+                destination: destination,
+                travelMode: google.maps.TravelMode.DRIVING
+            };
+            directionsService.route(request, function (response, status) {
+                if (status !== google.maps.DirectionsStatus.OK) {
+                    console.log("an error has occured")
+
+                } else {
+                    directionsDisplay.setDirections(response);
+                    var directionsData = response.routes[0].legs[0]; // Get data about the mapped route
+                }
+            });
+            //*********DISTANCE AND DURATION**********************//
+            var service = new google.maps.DistanceMatrixService();
+            service.getDistanceMatrix({
+                origins: [source],
+                destinations: [destination],
+                travelMode: google.maps.TravelMode.DRIVING,
+                unitSystem: google.maps.UnitSystem.IMPERIAL,
+                avoidHighways: false,
+                avoidTolls: false
+            }, function (response, status) {
+                if (status == google.maps.DistanceMatrixStatus.OK && response.rows[0].elements[0].status != "ZERO_RESULTS") {
+                    var distance = response.rows[0].elements[0].distance.text;
+                    var duration = response.rows[0].elements[0].duration.text;
+                    var duration1 = response.rows[0].elements[0].duration.value;
+                    var dvDistance = document.getElementById("dvDistance");
+                    dvDistance.innerHTML = "";
+                    dvDistance.innerHTML += "Distance: " + distance + "<br />";
+                    dvDistance.innerHTML += "Duration: " + duration;
+                    travelTime = duration
+                    rawTime = duration1
+
+
+                } else {
+                    alert("Unable to find the distance via road.");
+                }
+                return travelTime
+                return rawTime
+                
+
+            });
+
+            $("#textRemSetup").css("opacity", "1")
+            $("#textRemSetup").css("display", "inline")
+            $("#dvPanel").css("background-color", "white")
+
+
+        }
+        $(document).ready(function () {
+            $('input.timepicker').timepicker({ timeFormat: 'HH:mm:ss' });
+        });
+
+        $("#textRemSetup").click(function () {
+            $("#textPrompt").css("opacity", "1");
+            $("#button1DIV").css("opacity", "1");
+            $("#textPrompt").css("display", "inline");
+            $("#button1DIV").css("display", "inline");
+            
+            
+        })
+
+        
+
+
+        
+        $('#button1').click(function () {
+
+            var userName = $("#userName").val();
+            var desTime = $(".timepicker").val()
+            //rawTime = rawTime * 1000
+            
+            
+            console.log(rawTime)
+            
+
+
+            console.log(userName)
+            $.ajax({
+                type: 'POST',
+                url: '/sendText/' + travelTime + "/" + rawTime + "/" + userName + "/" + desTime 
+            });
+            console.log("button has been clicked")
+            console.log(travelTime)
+            
+
+
+            console.log("timepicker r", parseFloat($(".timepicker").val()))
+            
+            
+            
+        });
+
+
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+</body>
+
+</html>
